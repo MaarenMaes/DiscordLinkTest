@@ -266,6 +266,7 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1747472200
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,5 +487,7 @@ SceneRoots:
   - {fileID: 1855687854}
   - {fileID: 462858367}
   - {fileID: 1747472204}
+=======
+>>>>>>> parent of c1784c3 (AddedStuffToScene)
 =======
 >>>>>>> parent of c1784c3 (AddedStuffToScene)
