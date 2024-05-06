@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5886119a5c7b34d8872ab527ca3e1b, type: 3}
+  m_Name: SuperUnityBuildSettings
+  m_EditorClassIdentifier: 
+  _basicSettings:
+    baseBuildFolder: C:\UnityProjects\GameDesign2\DiscordLinkTest\Builds
+    buildPath: $VERSION/$RELEASE_TYPE/$PLATFORM/$ARCHITECTURE/$SCRIPTING_BACKEND
+    openFolderPostBuild: 1
+    constantsFileLocation: Assets\SuperUnityBuild
+  _productParameters:
+    buildCounter: 1
+    buildVersion: 1.0.0.1
+    versionTemplate: 1.0.0.$BUILD
+    autoGenerate: 1
+    syncWithPlayerSettings: 0
+  _releaseTypeList:
+    releaseTypes:
+    - typeName: Client
+      bundleIdentifier: com.DefaultCompany.AutomaticBuildTest
+      companyName: DefaultCompany
+      productName: GameForClient
+      syncAppNameWithProduct: 1
+      appBuildName: GameForClient
+      buildOptions: 0
+      customDefines: CLIENT_BUILD
+      sceneList:
+        releaseScenes: []
+    - typeName: Server
+      bundleIdentifier: com.DefaultCompany.AutomaticBuildTest
+      companyName: DefaultCompany
+      productName: AutomaticBuildTest
+      syncAppNameWithProduct: 1
+      appBuildName: AutomaticBuildTest
+      buildOptions: 16384
+      customDefines: SERVER_BUILD
+      sceneList:
+        releaseScenes: []
+  _platformList:
+    platforms:
+    - {fileID: 8642047476668738726}
+  _projectConfigurations:
+    configSet:
+      _Buckets: 0a000000ffffffffffffffff07000000ffffffff060000000b00000001000000ffffffffffffffff09000000ffffffff03000000ffffffff0500000008000000ffffffff
+      _HashCodes: 7bbc270ebbe756625f0dc62717d14b4f95f152521964254957e092183f60b40463de2b5d73df681b11039743b56ec74d0000000000000000000000000000000000000000
+      _Next: ffffffff00000000ffffffffffffffffffffffffffffffff02000000ffffffffffffffff04000000ffffffffffffffff0000000000000000000000000000000000000000
+      _Count: 12
+      _Version: 12
+      _FreeList: -1
+      _FreeCount: 0
+      _Keys:
+      - Client/PC/Windows x86 (App)/Mono
+      - Client/PC/Windows x86 (App)
+      - Client/PC/Windows x64 (App)/Mono
+      - Client/PC/Windows x64 (App)
+      - Client/PC
+      - Client
+      - Server/PC/Windows x86 (App)/Mono
+      - Server/PC/Windows x86 (App)
+      - Server/PC/Windows x64 (App)/Mono
+      - Server/PC/Windows x64 (App)
+      - Server/PC
+      - Server
+      - 
+      - 
+      - 
+      - 
+      - 
+      _Values:
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Client/PC/Windows x86 (App)/Mono
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Client/PC/Windows x64 (App)/Mono
+      - enabled: 1
+        childKeys:
+        - Client/PC/Windows x86 (App)
+        - Client/PC/Windows x64 (App)
+      - enabled: 1
+        childKeys:
+        - Client/PC
+      - enabled: 0
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Server/PC/Windows x86 (App)/Mono
+      - enabled: 0
+        childKeys: []
+      - enabled: 1
+        childKeys:
+        - Server/PC/Windows x64 (App)/Mono
+      - enabled: 1
+        childKeys:
+        - Server/PC/Windows x86 (App)
+        - Server/PC/Windows x64 (App)
+      - enabled: 1
+        childKeys:
+        - Server/PC
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+      - enabled: 1
+        childKeys: []
+    showViewOptions: 0
+    showConfigs: 0
+    showBuildInfo: 0
+    hideDisabled: 1
+    treeView: 0
+    selectedKeyChain: 
+  _preBuildActions:
+    buildActions: []
+  _postBuildActions:
+    buildActions: []
+--- !u!114 &8642047476668738726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2786f6b2301a94f4288672ff5305244c, type: 3}
+  m_Name: PC
+  m_EditorClassIdentifier: 
+  enabled: 1
+  distributionList:
+    distributions: []
+  architectures:
+  - target: 5
+    name: Windows x86
+    enabled: 1
+    binaryNameFormat: '{0}.exe'
+  - target: 19
+    name: Windows x64
+    enabled: 1
+    binaryNameFormat: '{0}.exe'
+  variants:
+  - variantName: Build Output
+    selectedIndex: 0
+    values:
+    - App
+    - Visual Studio Solution
+    isFlag: 0
+  scriptingBackends:
+  - scriptingImplementation: 0
+    name: Mono
+    enabled: 1
+  - scriptingImplementation: 1
+    name: IL2CPP
+    enabled: 0
+  platformName: PC
+  targetGroup: 1
